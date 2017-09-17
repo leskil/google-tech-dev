@@ -2,6 +2,12 @@
 
 namespace GoogleTechDev.CSharp.Foundations._02.Strings
 {
+    /// <summary>
+    /// Given a non-empty string like "Code" return a string like "CCoCodCode".
+    /// </summary>
+    /// <remarks>
+    /// https://techdevguide.withgoogle.com/paths/foundational/stringsplosion-problem-ccocodcode
+    /// </remarks>
     [TestFixture]
     public class StringSplosion : TestClass
     {
