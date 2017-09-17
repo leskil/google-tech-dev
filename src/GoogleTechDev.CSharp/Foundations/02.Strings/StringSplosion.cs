@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace GoogleTechDev.CSharp.Foundations._02.Strings
 {
@@ -14,7 +13,7 @@ namespace GoogleTechDev.CSharp.Foundations._02.Strings
         {
             var result = string.Empty;
 
-            for (var i =0; i < input.Length; i++)
+            for (var i = 0; i < input.Length; i++)
             {
                 result = result + input.Substring(0, i + 1);
             }
