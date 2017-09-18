@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System.Text;
+using NUnit.Framework;
 
 namespace GoogleTechDev.CSharp.Foundations._02.Strings
 {
@@ -17,14 +18,14 @@ namespace GoogleTechDev.CSharp.Foundations._02.Strings
         [TestCase("Code", "CCoCodCode")]
         public void ForLoop(string input, string expectedResult)
         {
-            var result = string.Empty;
+            var result = new StringBuilder();
 
             for (var i = 0; i < input.Length; i++)
             {
-                result = result + input.Substring(0, i + 1);
+                result.Append(input.Substring(0, i + 1));
             }
 
-            Assert.That(result, Is.EqualTo(expectedResult));
+            Assert.That(result.ToString(), Is.EqualTo(expectedResult));
         }
     }
 }
