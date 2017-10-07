@@ -12,7 +12,7 @@ namespace GoogleTechDev.CSharp.Foundations._01.Subsequence
     public class SubsequenceFinder : TestClass
     {
         [Test]
-        public void Brute_Force()
+        public void Greedy()
         {
             const string s = "abppplee";
             var d = new[] {"able", "ale", "apple", "bale", "kangaroo"};

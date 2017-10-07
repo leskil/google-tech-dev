@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.Linq;
+using System.Text;
 using NUnit.Framework;
 
 namespace GoogleTechDev.CSharp.Foundations._02.Strings
@@ -24,6 +26,8 @@ namespace GoogleTechDev.CSharp.Foundations._02.Strings
             {
                 result.Append(input.Substring(0, i + 1));
             }
+
+            String s = "Hello world!";
 
             Assert.That(result.ToString(), Is.EqualTo(expectedResult));
         }
